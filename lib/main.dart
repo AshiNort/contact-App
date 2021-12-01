@@ -13,8 +13,13 @@ void main() {
    @override
    Widget build(BuildContext context) {
      return MaterialApp(debugShowCheckedModeBanner: false,
-       title: "My Contact App",
-       theme:  ThemeData(
+       title: "My Contacts App",
+       theme:  ThemeData(fontFamily: "Outfit",
+         appBarTheme:const AppBarTheme(
+           backgroundColor: Colors.white24,
+        toolbarTextStyle: TextStyle(
+          color: Colors.blue
+        ) ),
           primaryColor:const Color.fromRGBO(70, 47, 196, 1)
           ),
        home: const HomeView(),
